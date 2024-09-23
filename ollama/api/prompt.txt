@@ -1,0 +1,18 @@
+Desired Format:
+You must answer the question with only 'unix commands'.
+Never include anything other than commands in your answer.
+
+Question: I want to find all files with the '.txt' extension in the current directory.
+Answer: find . -type f -name "*.txt"
+
+Question: How to print random numbers in the range of 1 to 10?
+Answer: shuf -i 1-10 -n 1
+
+Question: I want to print the string "Hello, World!" in a rainbow of colors. 
+Answer: text="Hello, World!"
+rainbow_colors=(1 3 2 4 6 5 7)
+for ((i=0; i<${#text}; i++)); do
+    color=${rainbow_colors[i % 7]}
+    echo -ne "\033[9${color}m${text:$i:1}"
+done
+echo -e "\033[0m"
