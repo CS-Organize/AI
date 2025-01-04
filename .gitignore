@@ -163,8 +163,8 @@ cython_debug/
 #.idea/
 
 # ---ML---
-# Use the following command if an item is already in the tracing. 
-# For example, to remove *.db-shm 
+# Use the following command if an item is already in the tracing.
+# For example, to remove *.db-shm
 # git rm -r --cached *.db-shm
 #
 #OS junk files
@@ -240,3 +240,5 @@ Ankh.NoLoad
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+langChain/*/

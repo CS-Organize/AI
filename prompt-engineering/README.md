@@ -10,7 +10,7 @@
 ## Prompt Design
 
 - Main Instructions - a task you want the model to perform
-- Data - any input data (if necessary) 
+- Data - any input data (if necessary)
 - Output Instructions - what type of output do you want? What format?
 
 ```
@@ -25,6 +25,7 @@
 ### Examples
 
 **출력 형식을 명시**
+
 ```
 Extract a list of place names from the following input text
 
@@ -36,6 +37,7 @@ input: Alaska is a non-contiguous U.S. state on the northwest extremity of North
 ```
 
 **JSON 형식으로 출력**
+
 ```
 Generate a list of the top 5 most populated countries in the world with their population
 
@@ -43,18 +45,20 @@ Desired Format: JSON object with country name as the key and population as the v
 ```
 
 **변형**
+
 ```
 Translate the following text to Spanish, French, and Japanese
 
-Desired Format: 
+Desired Format:
 JSON object with the language as key and text as value
 
 Text: My favorite color is purple
 
-JSON: 
+JSON:
 ```
 
 **인칭, 시제 변형**
+
 ```
 Transform the following text to 3rd person female in the future tence
 
@@ -62,6 +66,7 @@ Text: I love skiing so much. Today I went skiing with my best friends and I fell
 ```
 
 **이모지**
+
 ```
 Transform each movie title into an emoji
 
@@ -69,6 +74,7 @@ The Lion King:
 ```
 
 **글 요약**
+
 ```
 Summarize the following text in 2-3 sentences
 
@@ -82,8 +88,9 @@ While psychological knowledge is often applied to the assessment and treatment o
 ```
 
 **분석**
+
 ```
-Classify the following text's sentiment as positive, neutral, or negative 
+Classify the following text's sentiment as positive, neutral, or negative
 
 Desired Format: a number -1 for negative, 0 for neutral, 1 for positive
 
@@ -102,27 +109,31 @@ Product Hunt should consider removing this company as they are nothing but troub
 ```
 
 ### Zero-shot Classification
+
 - 아무런 예시나 데이터 없이 모델이 주어진 문제를 해결하는 것
 - 보통 Zero-shot -> Few-shot 순으로 문제 해결
 
 ### Few-shot(One-shot) Classification
+
 - 아주 적은 양의 데이터를 이용하여 모델이 주어진 문제를 해결하는 것
+
 ```
 Extract keywords from the corresponding texts below.
 
 Text 1: Stripe provides APIs that web developers can use to integrate payment processing into their websites and mobile applications.
-Keywords 1: Stripe, payment processing, APIs, web developers, websites, mobile applications 
+Keywords 1: Stripe, payment processing, APIs, web developers, websites, mobile applications
 ##
 
 Text 2: OpenAI has trained cutting-edge language models that are very good at understanding and generating text. Our API provides access to these models and can be used to solve virtually any task that involves processing language.
 Keywords 2: OpenAI, language models, text processing, API.
 ##
 
-Text 3: {text} 
-Keywords 3: 
+Text 3: {text}
+Keywords 3:
 ```
 
 ### Chain of Thought Prompting
+
 - [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916) 논문에서 제안된 방법
 - "Let's think step by step" 이라는 문구로 추론 능력을 향상시키는 방법
 
@@ -131,5 +142,16 @@ Alice is 7 years older than Beth, who is 5 years older than Erica. What is the d
 
 Let's think step by step
 
-answer: 
+answer:
 ```
+
+## Resources
+
+- [learnprompting.org](https://learnprompting.org/docs/introduction) [🇰🇷](https://learnprompting.org/ko/docs/introduction)
+- [promptingguide.ai](https://www.promptingguide.ai/) [🇰🇷](https://www.promptingguide.ai/kr/)
+- [huggingface.co](https://huggingface.co/docs/transformers/tasks/prompting) [🇰🇷](https://huggingface.co/docs/transformers/ko/tasks/prompting)
+- [openai cookbook related resources](https://cookbook.openai.com/articles/related_resources)
+- [brexhq/prompt-engineering](https://github.com/brexhq/prompt-engineering)
+- [openai/prompt-engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Prompt Engineering 101](https://amatria.in/blog/PromptEngineering)
+- [lilianweng/prompt-engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
