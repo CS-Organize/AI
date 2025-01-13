@@ -155,3 +155,4 @@ answer:
 - [openai/prompt-engineering](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Prompt Engineering 101](https://amatria.in/blog/PromptEngineering)
 - [lilianweng/prompt-engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- [1000+ ChatGPT Prompts](https://careful-alley-06f.notion.site/1000-ChatGpt-Prompts-673bfe71e437418ba35a739301000b8f)
