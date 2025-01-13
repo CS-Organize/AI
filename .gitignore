@@ -241,4 +241,5 @@ Ankh.NoLoad
 ehthumbs.db
 Thumbs.db
 
-langChain/*/
+langchain-academy/
+langchain-kr/
