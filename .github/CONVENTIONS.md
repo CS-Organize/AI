@@ -5,7 +5,7 @@
   - [Commit Message Convention](#commit-message-convention)
   - [Issue Label Setting](#issue-label-setting)
   - [References](#references)
-- [Naming Convention](#naming-convention)
+- [NextJS Naming Convention](#nextjs-naming-convention)
   - [File Naming Convention](#file-naming-convention)
   - [Function/Variable Naming Convention](#functionvariable-naming-convention)
   - [Component Naming Convention](#component-naming-convention)
@@ -20,6 +20,7 @@
   - [src/states](#srcstates)
   - [src/types](#srctypes)
   - [References](#references-1)
+- [Code Style Convention](#code-style-convention)
 
 ## Git Convention
 
@@ -28,38 +29,38 @@
 
 ### Branch Type Description
 
-- feat (feature)  
-  새로운 기능을 추가할 때 사용합니다.  
+- feat (feature)
+  새로운 기능을 추가할 때 사용합니다.
   예: `feat/login/#123`
-- fix (bug fix)  
-  버그를 수정할 때 사용합니다.  
+- fix (bug fix)
+  버그를 수정할 때 사용합니다.
   예: `fix/button-click/#456`
 - refactor
-  코드 리팩토링(기능 변경 없이 코드 구조 개선)을 할 때 사용합니다.  
+  코드 리팩토링(기능 변경 없이 코드 구조 개선)을 할 때 사용합니다.
   예: `refactor/auth-service/#102`
 - chore
-  프로젝트 유지 보수 작업(빌드 설정, 패키지 업데이트 등)을 할 때 사용합니다.  
+  프로젝트 유지 보수 작업(빌드 설정, 패키지 업데이트 등)을 할 때 사용합니다.
   예: `chore/dependency-update/#104`
-- style  
-  코드 스타일(포맷 수정, 세미콜론 추가 등)을 수정할 때 사용합니다. 기능 수정은 포함되지 않습니다.  
+- style
+  코드 스타일(포맷 수정, 세미콜론 추가 등)을 수정할 때 사용합니다. 기능 수정은 포함되지 않습니다.
   예: `style/css-format/#101`
-- build  
-  빌드 시스템이나 외부 종속성 변경(npm, yarn 등)에 사용합니다.  
+- build
+  빌드 시스템이나 외부 종속성 변경(npm, yarn 등)에 사용합니다.
   예: `build/webpack-config/#105`
-- test  
-  테스트 코드를 추가하거나 수정할 때 사용합니다.  
+- test
+  테스트 코드를 추가하거나 수정할 때 사용합니다.
   예: `test/unit-tests/#103`
-- docs (documentation)  
-  문서 작업(README, 주석 등)을 할 때 사용합니다.  
+- docs (documentation)
+  문서 작업(README, 주석 등)을 할 때 사용합니다.
   예: `docs/api-docs/#789`
-- ci  
-  CI 구성파일 및 스크립트 변경에 사용합니다.  
+- ci
+  CI 구성파일 및 스크립트 변경에 사용합니다.
   예: `ci/github-actions/#106`
-- perf (performance)  
-  성능을 개선할 때 사용합니다.  
+- perf (performance)
+  성능을 개선할 때 사용합니다.
   예: `perf/api-speed/#107`
-- revert  
-  이전 커밋을 되돌릴 때 사용합니다.  
+- revert
+  이전 커밋을 되돌릴 때 사용합니다.
   예: `revert/login-bug/#108`
 
 ### Commit Message Convention
@@ -76,7 +77,7 @@
 - [AngularJS Git Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
 - [Conventional Commits](https://www.conventionalcommits.org/ko/v1.0.0/)
 
-## Naming Convention
+## NextJS Naming Convention
 
 ### File Naming Convention
 
@@ -141,3 +142,7 @@ nextjs에서는 여러 디렉토리 구조를 사용할 수 있지만, [`app` �
 
 - https://miriya.net/blog/cliz752zc000lwb86y5gtxstu
 - https://medium.com/@mertenercan/nextjs-13-folder-structure-c3453d780366
+
+## Code Style Convention
+
+- [ESLint](https://eslint.org/)와 [Prettier](https://prettier.io/)를 사용하여 코드 스타일을 관리합니다.
