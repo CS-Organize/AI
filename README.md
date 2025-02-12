@@ -143,3 +143,7 @@
 - [The 2025 AI Engineer Reading List](https://www.latent.space/p/2025-papers)
 - [NLP 공부하는 사람이라면 꼭 읽어야하는 논문 대신 정리해드립니다](https://velog.io/@euisuk-chung/%EB%B2%88%EC%97%AD%EC%A0%95%EB%A6%AC-NLP-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4%EB%9D%BC%EB%A9%B4-%EA%BC%AD-%EC%9D%BD%EC%96%B4%EC%95%BC%ED%95%98%EB%8A%94-%EB%85%BC%EB%AC%B8-%EB%8C%80%EC%8B%A0-%EC%A0%95%EB%A6%AC%ED%95%B4%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4)
 - [Must-Read Research Papers for NLP](https://datajourney24.substack.com/p/must-read-research-papers-for-nlp?r=25b2f4&utm_campaign=post&utm_medium=web&triedRedirect=true)
+
+## Resource
+
+- [Andrej Karpathy - Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI&list=PLD_T8q5A90Dm9VAsv4rEOlYXNi4nRbICn)
