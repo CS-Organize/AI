@@ -190,3 +190,15 @@ cython_debug/
 *.db
 *.sqlite3
 *.bin
+*.pdf
+*.mp3
+*.m4a
+*.mp4
+*.mov
+output/
+data/
+
+# JS
+
+node_modules/
+pnpm-lock.yaml

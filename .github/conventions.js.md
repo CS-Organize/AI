@@ -5,8 +5,7 @@
   - [Commit Message Convention](#commit-message-convention)
   - [Issue Label Setting](#issue-label-setting)
 - [Code Style Convention](#code-style-convention)
-  - [.prettierrc](#prettierrc)
-  - [.eslintrc](#eslintrc)
+  - [prettier](#prettier)
   - [pre-commit](#pre-commit)
 - [NextJS Naming Convention](#nextjs-naming-convention)
   - [File Naming Convention](#file-naming-convention)
@@ -71,25 +70,25 @@
 
 - [Prettier](https://prettier.io/)와 [ESLint](https://eslint.org/)를 사용하여 코드 스타일을 관리합니다.
 
-### .prettierrc
+### [prettier](https://prettier.io/docs/options)
 
 ```json
 {
-  "printWidth": 80,
-  "tabWidth": 2,
-  "useTabs": false,
-  "singleQuote": true,
-  "semi": true,
-  "endOfLine": "auto",
+  "printWidth": 80, // 한 줄의 최대 길이
+  "tabWidth": 2, // 들여쓰기에 사용할 공백 수
+  "useTabs": false, // 탭 대신 공백 사용
+  "singleQuote": false, // 문자열에 쌍따옴표 사용
+  "semi": true, // 문장 끝에 세미콜론 사용
+  "endOfLine": "lf", // 줄바꿈
 
-  "proseWrap": "preserve",
-  "bracketSpacing": true,
-  "arrowParens": "always",
-  "htmlWhitespaceSensitivity": "css",
-  "jsxSingleQuote": false,
-  "jsxBracketSameLine": false,
-  "quoteProps": "as-needed",
-  "trailingComma": "all",
+  "proseWrap": "preserve", // 마크다운 텍스트 안 건드리기
+  "bracketSpacing": true, // 객체 리터럴에서 괄호에 공백 삽입
+  "arrowParens": "always", // 화살표 함수 인자에 괄호 사용
+  "htmlWhitespaceSensitivity": "css", // HTML 파일의 공백 처리 방식
+  "jsxSingleQuote": false, // JSX에서 쌍따옴표 사용
+  "jsxBracketSameLine": false, // 여는 태그의 `>`를 다음 줄로 내림
+  "quoteProps": "as-needed", // 객체 속성 이름에 따옴표가 필요한 경우에만 따옴표 사용
+  "trailingComma": "all", // 마지막 요소 뒤에 쉼표 사용
   "overrides": [
     {
       "files": "*.json",
@@ -101,41 +100,10 @@
 }
 ```
 
-### .eslintrc
-
-```json
-{
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "@typescript-eslint"],
-  "rules": {
-    "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-explicit-any": "error",
-    "react/prop-types": "off"
-  }
-}
-```
-
 ### pre-commit
 
 ```shell
-pnpm install husky prettier eslint lint-staged eslint-config-prettier --save-dev
+pnpm add husky prettier eslint lint-staged eslint-config-prettier --save-dev
 
 pnpm dlx husky-init
 pnpm pkg set scripts.prepare="husky install"
@@ -159,7 +127,7 @@ chmod +x .husky/*
 ```shell
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx lint-staged
+pnpm dlx lint-staged
 ```
 
 ## NextJS Naming Convention
