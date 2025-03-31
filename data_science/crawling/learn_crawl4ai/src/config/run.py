@@ -12,7 +12,7 @@ def setup_run_config(args, md_generator):
         screenshot=True,
         pdf=True,
         verbose=False,  # Same as browser_conf.verbose
-        excluded_tags=["form", "header"],
+        excluded_tags=["nav", "aside", "footer", "form", "header"],
         exclude_external_links=True,  # Remove external links
         remove_overlay_elements=True,  # Remove popups/modals
         process_iframes=True,  # Process iframe content

@@ -1,14 +1,9 @@
 [project]
-name = "youtube"
+name = "learn-yt-dlp"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13.2"
 dependencies = [
-    "youtube-transcript-api>=1.0.1",
-]
-
-[dependency-groups]
-dev = [
-    "ipykernel>=6.29.5",
+    "yt-dlp>=2025.2.19",
 ]

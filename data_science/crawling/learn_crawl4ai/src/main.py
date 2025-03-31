@@ -28,17 +28,19 @@ async def main():
 
         if result.success:
             # Print clean content
-            print("Content:", result.markdown[:500])  # First 500 chars
+            md_obj = result.markdown
+            print("Raw Markdown length:", len(md_obj.raw_markdown))
+            print("Fit Markdown length:", len(md_obj.fit_markdown))
 
-            # Process images
-            for image in result.media["images"]:
-                print(f"Found image: {image['src']}")
+            # # Process images
+            # for image in result.media["images"]:
+            #     print(f"Found image: {image['src']}")
 
-            # Process links
-            for link in result.links["internal"]:
-                print(f"Internal link: {link['href']}")
+            # # Process links
+            # for link in result.links["internal"]:
+            #     print(f"Internal link: {link['href']}")
 
-            save_text_to_unique_file(result.markdown)
+            save_text_to_unique_file(md_obj)
 
         else:
             print(f"Crawl failed: {result.error_message}")
