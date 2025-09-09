@@ -1,6 +1,6 @@
 import asyncio
 
-from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
+from crawl4ai import AsyncWebCrawler
 
 from config.browser import setup_browser_config
 from config.markdown import setup_markdown_generator
@@ -8,9 +8,7 @@ from config.run import setup_run_config
 from utils.arg import setup_argparse
 from utils.file import save_png_to_unique_file, save_text_to_unique_file
 
-urls = [
-    "https://www.ag-grid.com/react-data-grid/",
-]
+urls = ["https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide"]
 
 
 async def main():

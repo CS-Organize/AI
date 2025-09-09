@@ -21,6 +21,12 @@ mlx_whisper \
 ## Usage
 
 ```bash
+yt-dlp -F {URL} # 비디오 포맷 확인
+yt-dlp -f bestvideo+bestaudio {URL} -o {OUTPUT_NAME} # 최고 품질 비디오와 오디오 다운로드
+yt-dlp -f bestaudio {URL} -o {OUTPUT_NAME} # 최고 품질 오디오 다운로드
+```
+
+```bash
 usage: mlx_whisper [-h] [--model MODEL] [--output-name OUTPUT_NAME]
                    [--output-dir OUTPUT_DIR]
                    [--output-format {txt,vtt,srt,tsv,json,all}]
@@ -315,3 +321,9 @@ mlx_whisper \
 ## Bug
 
 https://huggingface.co/mlx-community/whisper-large-v3-mlx/discussions/4#674de7ed37268b0dca069695
+
+## yt-dlp
+
+```bash
+yt-dlp -f bestaudio {URL} -o {OUTPUT_NAME} # 최고 품질 오디오 다운로드
+```

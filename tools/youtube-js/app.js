@@ -1,11 +1,14 @@
 // https://js.langchain.com/docs/integrations/document_loaders/web_loaders/youtube/
 
-import { YoutubeLoader } from '@langchain/community/document_loaders/web/youtube';
+import { YoutubeLoader } from "@langchain/community/document_loaders/web/youtube";
 
-const loader = YoutubeLoader.createFromUrl('https://youtu.be/bZQun8Y4L2A', {
-  language: 'en',
-  addVideoInfo: true,
-});
+const loader = YoutubeLoader.createFromUrl(
+  "https://www.youtube.com/watch?v=9MTqnXqS1k0",
+  {
+    language: "ko",
+    addVideoInfo: true,
+  },
+);
 
 const docs = await loader.load();
 
